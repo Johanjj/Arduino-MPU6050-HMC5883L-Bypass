@@ -13,10 +13,10 @@ HMC5883L measurement with HMC5883L_Simple library:
 
 - Heading degrees compass.
 
-My learning Sources
-MPU6050 Datasheet https://cdn.sparkfun.com/datasheets/Sensors/Accelerometers/RM-MPU-6000A.pdf
-https://youtube.com/@carbonaeronautics?si=PKxU4YJIEQuEx2X3
-https://forum.arduino.cc/t/extracting-a-magnetic-heading-from-gy-86/185955/4
-https://howtomechatronics.com/tutorials/arduino/arduino-and-mpu6050-accelerometer-and-gyroscope-tutorial/
-https://electropeak.com/learn/interfacing-gy-87-10dof-imu-mpu6050-hmc5883l-bmp085-module-with-arduino/
-https://github.com/sleemanj/HMC5883L_Simple
+My learning Sources:
+- MPU6050 Datasheet https://cdn.sparkfun.com/datasheets/Sensors/Accelerometers/RM-MPU-6000A.pdf
+- https://youtube.com/@carbonaeronautics?si=PKxU4YJIEQuEx2X3
+- https://forum.arduino.cc/t/extracting-a-magnetic-heading-from-gy-86/185955/4
+- https://howtomechatronics.com/tutorials/arduino/arduino-and-mpu6050-accelerometer-and-gyroscope-tutorial/
+- https://electropeak.com/learn/interfacing-gy-87-10dof-imu-mpu6050-hmc5883l-bmp085-module-with-arduino/
+- https://github.com/sleemanj/HMC5883L_Simple
