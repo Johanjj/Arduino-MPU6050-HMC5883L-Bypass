@@ -153,10 +153,10 @@ void setup() {
   rateCalibrationYaw /= 2000;
 
   // Initialize hmc5883l
-  Compass.SetDeclination(23, 35, 'E');
+  Compass.SetDeclination(0, 30, 'E'); // Jakarta, 0° 30' EAST
   Compass.SetSamplingMode(COMPASS_SINGLE);
   Compass.SetScale(COMPASS_SCALE_130);
-  Compass.SetOrientation(COMPASS_HORIZONTAL_X_NORTH);
+  Compass.SetOrientation(COMPASS_HORIZONTAL_X_NORTH);  // The compass is oriented horizontally, top-side up. when pointing North the X silkscreen arrow will point North
 
   loopTimer = micros();  // Initialize loop timer in micros
 }
@@ -169,9 +169,9 @@ void loop() {
   rateYaw -= rateCalibrationYaw;
 
   // Get Acceleration offset value from here
-  // there must be an offset if g != 0 when accX static or g != +-1.0 when accX fully roll
-  // there must be an offset if g != 0 when accY static or g != +-1.0 when accY fully pitch
-  // there must be an offset if g != 0 when accZ fully roll/pitch or g != +-1.0 when accZ static
+  // there must be an offset if g != 0 when sensor is oriented horizontally, top-side up or g != +-1.0 when accX fully roll
+  // there must be an offset if g != 0 when sensor is oriented horizontally, top-side up or g != +-1.0 when accY fully pitch
+  // there must be an offset if g != 0 when accZ fully roll/pitch or g != +-1.0 when sensor is oriented horizontally, top-side up
   Serial.print("Acceleration X [g]: ");
   Serial.print(accX);
   Serial.print("\t");
